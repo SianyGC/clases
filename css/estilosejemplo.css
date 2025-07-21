@@ -1,0 +1,75 @@
+/* Selector de Elemento: body */
+body {
+    font-family: Arial, sans-serif; /*Propiedad de fuentes: familia de fuente */  
+    margin: 0; /* Propiedad de texto: elimina el margen predeterminado del body */
+    padding: 20px; /* Espaciado interno */
+    background-color: #f4f4f4; /* Color de fondo */
+    color: #333; /* Color de texto predeterminado */
+}
+
+/* Selector de Elemento: h1 */
+h1 {
+    color: #2c3e50; /* Propiedad de texto: color de texto */
+    text-align: center; /* Propiedad de texto: alineación del texto */
+    font-size: 40px; /* Propiedad de fuentes: tamaño de fuente (relativo al elemento padre) */
+    margin-bottom: 10px;
+}
+/* Estilos para encabezados h2 */
+h2 {
+    color: #34495e;
+    font-size: 30px; /* Tamaño de fuente */
+    margin-top: 30px;
+    margin-bottom: 15px;
+    text-transform: capitalize; /* Convierte la primera letra de cada palabra a mayúscula */
+}
+/* Selector de Elemento: p */
+p {
+    margin-bottom: 15px; /* Propiedad de texto: margen inferior */
+    font-size: 1em; /* Tamaño de fuente por defecto */
+}
+/* Estilos para listas */
+ul {
+    list-style-type: square; /* Propiedad de texto: tipo de viñeta */
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+/* Selector de Elemento: a (enlace) */
+a {
+    color: #3498db;
+    text-decoration: none; /* Propiedad de texto: quita el subrayado de los enlaces */
+}
+
+a:hover { /* Pseudo-clase: cuando el cursor está sobre el enlace */
+    text-decoration: underline; /* Vuelve a poner el subrayado al pasar el ratón */
+}
+/* Selector de Clase: .resaltado */
+.resaltado {
+    font-weight: bold; /* Propiedad de fuentes: peso de la fuente (negrita) */
+    color: #e74c3c; /* Color de texto rojo */
+    font-style: italic; /* Propiedad de fuentes: estilo de la fuente (cursiva) */
+}
+
+/* Selector de Clase: .destacado */
+.destacado {
+    background-color: #ffeaa7; /* Color de fondo */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    text-transform: uppercase; /* Propiedad de texto: convierte el texto a mayúsculas */
+    letter-spacing: 1px; /* Propiedad de texto: espaciado entre letras */
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3); /* Propiedad de texto: sombra de texto */
+}
+
+/* Selector de Clase: .ejemplos */
+.ejemplos {
+    border-left: 5px solid #2ecc71; /* Borde izquierdo */
+    padding-left: 15px;
+    margin-bottom: 25px;
+}
+/* Selector de ID: #fuente-especial */
+#fuente-especial {
+    font-family: "Georgia", serif; /* Propiedad de fuentes: otra familia de fuente */
+    font-size: 1.5em; /* Tamaño de fuente más grande */
+    color: #8e44ad; /* Color de texto púrpura */
+    text-align: center; /* Alineación central */
+}

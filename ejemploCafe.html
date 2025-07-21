@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café del Sol - Cafetería Artesanal</title>
+    <link rel="stylesheet" href="css/ejmCafe.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#"><img src="logo_cafe.png" alt="Café del Sol Logo"></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#menu">Menú</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#eventos">Eventos</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <div class="nav-icons">
+                <a href="#"><i class="fas fa-search"></i></a>
+                <a href="#"><i class="fas fa-user-circle"></i> Iniciar Sesión</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Tu Pausa Perfecta Comienza Aquí</h1>
+                <p>Descubre el aroma y el sabor de nuestro café artesanal, hecho con pasión y granos selectos de Costa Rica.</p>
+                <a href="#menu" class="btn-action">Explora Nuestro Menú</a>
+            </div>
+        </section>
+
+        ---
+
+        <section id="especialidades" class="flex-section">
+            <h2>Nuestras Especialidades</h2>
+            <div class="flex-container">
+                <article class="flex-item">
+                    <h3>Café de Origen Único</h3>
+                    <p>Experimenta la riqueza de nuestros granos cuidadosamente seleccionados, tostados a la perfección para resaltar sus notas únicas.</p>
+                </article>
+                <article class="flex-item">
+                    <h3>Repostería Casera</h3>
+                    <p>Endulza tu día con nuestras delicias horneadas diariamente, desde cruasanes frescos hasta pasteles exquisitos.</p>
+                </article>
+                <article class="flex-item">
+                    <h3>Bebidas Refrescantes</h3>
+                    <p>Más allá del café, disfruta de una variedad de tés, batidos y bebidas frías para cualquier momento del día.</p>
+                </article>
+            </div>
+        </section>
+
+        ---
+
+        <section id="ambiente" class="flex-section reverse-flex">
+            <h2>Un Ambiente que Inspira</h2>
+            <div class="flex-container">
+                <figure class="flex-item large-item">
+                    <img src="ambiente_cafe.jpg" alt="Interior acogedor de la cafetería">
+                    <figcaption>Espacios cómodos para trabajar o relajarse.</figcaption>
+                </figure>
+                <article class="flex-item small-item">
+                    <h3>Tu Lugar Favorito en la Ciudad</h3>
+                    <p>Diseñado para que te sientas como en casa, con conexión Wi-Fi, música suave y la mejor atención.</p>
+                    <p>Ideal para reuniones, estudio o simplemente para disfrutar de un buen libro.</p>
+                </article>
+            </div>
+        </section>
+
+        ---
+
+        <section id="galeria" class="gallery-section">
+            <h2>Nuestra Galería</h2>
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="cafe">Café</button>
+                <button class="filter-btn" data-filter="postres">Postres</button>
+                <button class="filter-btn" data-filter="local">Local</button>
+            </div>
+            <div class="gallery-grid">
+                <figure class="gallery-item cafe">
+                    <img src="galeria_cafe1.jpg" alt="Café Latte Art">
+                    <figcaption>Latte Art exquisito</figcaption>
+                    <div class="overlay"><span>Latte Art</span></div>
+                </figure>
+                <figure class="gallery-item postres">
+                    <img src="galeria_postre1.jpg" alt="Cheesecake de frutos rojos">
+                    <figcaption>Cheesecake de frutos rojos</figcaption>
+                    <div class="overlay"><span>Cheesecake</span></div>
+                </figure>
+                <figure class="gallery-item local">
+                    <img src="galeria_local1.jpg" alt="Exterior de la cafetería">
+                    <figcaption>Fachada de Café del Sol</figcaption>
+                    <div class="overlay"><span>Fachada</span></div>
+                </figure>
+                <figure class="gallery-item cafe">
+                    <img src="galeria_cafe2.jpg" alt="Taza de café recién hecho">
+                    <figcaption>Café de especialidad</figcaption>
+                    <div class="overlay"><span>Café Recién Hecho</span></div>
+                </figure>
+                <figure class="gallery-item postres">
+                    <img src="galeria_postre2.jpg" alt="Croissants frescos">
+                    <figcaption>Croissants recién horneados</figcaption>
+                    <div class="overlay"><span>Croissants</span></div>
+                </figure>
+                <figure class="gallery-item local">
+                    <img src="galeria_local2.jpg" alt="Interior acogedor">
+                    <figcaption>Rincón de lectura</figcaption>
+                    <div class="overlay"><span>Rincón Acogedor</span></div>
+                </figure>
+            </div>
+        </section>
+    </main>
+
+    ---
+
+    <footer>
+        <p>&copy; 2025 Café del Sol. Todos los derechos reservados. | Diseñado en Costa Rica</p>
+    </footer>
+
+    <script src="script.js"></script>
+    </body>
+</html>

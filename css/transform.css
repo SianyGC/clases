@@ -1,0 +1,114 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+img{
+    width: 50px;
+
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    background-color: rgba(127, 125, 123, 0.463); 
+}
+.encabezado ul,  nav {
+    display: flex;
+}
+
+li{
+    list-style: none;
+    margin: 10px;
+    font-size: 20px;
+    font-weight: 900;
+}
+nav button{
+    width: 60px;
+    border-radius: 15px;
+}
+
+main{
+
+background-color:antiquewhite;
+}
+
+.hero{
+
+width: 100%;
+background-image: url(../img/paisaje.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+display: flex;
+justify-content: center;
+padding: 80px;
+
+}
+
+.text{
+
+width: 30%;
+text-align: center;
+color: white;
+
+}
+
+.hero button{
+padding: 10px;
+background-color: black;
+color: white;
+border: 2px solid white;
+}
+
+.text h2,p,button{
+padding: 10px;
+}
+#sub{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+#sub div{
+    padding: 80px;
+    text-align: center;
+}
+.contenedorcard{
+    display: flex;
+}
+.cuadro img{
+    width:100%;
+}
+.card{
+    align-items: center;
+    width: auto;
+    padding: 3%;
+}
+.pie{
+    display: flex;
+    justify-content: space-around;
+    background-color:gray ;
+}
+/* unvisited link */
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+
+
+
+

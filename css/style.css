@@ -1,0 +1,40 @@
+/* Características Generales */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-link:hover{
+    background-color:black;
+    color:aliceblue;
+}
+.hero{
+    background-color: black;
+    background-image: url(../img/laptop-pantalla-brillante-mesa-espacio-copia-vista-superior-oscura_169016-51607.avif);
+    background-repeat: no-repeat;
+    background-position:right;
+}
+
+.hero img{
+    width: 100%;
+    height: auto;
+    object-position: center;
+    object-fit: contain;
+    background-color: aliceblue;
+}
+.contenedor-fondo{
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0);
+    display: flex;
+    justify-content:space-between;
+}
+.contenedor-fondo:hover{
+    color: rgb(0, 0, 0);
+}
+.fondo{
+    background-image: url(../img/paisaje.jpg);
+    background-size: cover;
+    padding: 100px;
+}
+

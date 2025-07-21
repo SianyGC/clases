@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section{
+    display: flex;
+    background-color: antiquewhite;
+    padding: 20px;
+}
+article{
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: -3px 6px 5px 3px rgba(166,148,148,0.75);
+}
+#card1{
+    margin-right: 50px;
+    background-color: cadetblue;
+}
+#card2{
+    margin-right: 50px;
+    background-color:rgb(229, 124, 86);
+}
+#card3{
+    background-color:rgb(215, 49, 138);
+}
+img{
+    width: 100%;
+}
+header{
+    background-color: black;
+    color: aliceblue;
+    font-size: 40px;
+    text-align: right;
+    padding: 20px;
+}

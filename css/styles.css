@@ -1,0 +1,33 @@
+/* --- SELECTOR UNIVERSAL (*) --- */
+/* Aplica estas propiedades a TODOS los elementos de la página */
+* {
+    margin: 0; /* Elimina el margen por defecto de los navegadores */
+    padding: 0; /* Elimina el padding por defecto */
+    box-sizing: border-box; /* Incluye padding y borde en el ancho/alto del elemento */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Define una fuente base */
+    color: #333; /* Color de texto por defecto para todo */
+}
+table{
+    border-collapse: collapse;
+    width: 50%;
+    background-image: url(../img/imagen.jpg);
+}
+tr:first-child{
+    border-bottom: 5px double;
+    border-color: aliceblue;
+}
+th, td{
+    border:3px solid cadetblue;
+    padding: 5px;
+}
+th{
+    background-color: cadetblue;
+    color: aliceblue;
+    text-align: center;
+}
+tr:hover{
+    background-color: gainsboro;
+    cursor: pointer;
+}
+
+

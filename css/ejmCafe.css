@@ -1,0 +1,303 @@
+/* Estilos Generales y Reset */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+}
+
+/* Barra de Navegación */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: #5C4033; /* Marrón oscuro del café */
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .logo img {
+    height: 50px; /* Tamaño del logo */
+}
+
+.navbar .nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar .nav-links li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.navbar .nav-links li a:hover {
+    background-color: #8B4513; /* Un tono más claro al pasar el mouse */
+}
+
+.navbar .nav-icons a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-icons a:hover {
+    color: #FFD700; /* Dorado para destacar */
+}
+
+/* Sección Hero */
+.hero {
+    background: url('fondo_cafe_hero.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 150px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 500px; /* Altura mínima para la sección */
+}
+
+.hero-content h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+}
+
+.btn-action {
+    background-color: #A0522D; /* Tono de marrón para el botón */
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+.btn-action:hover {
+    background-color: #D2691E; /* Naranja-marrón al pasar el mouse */
+}
+
+/* Secciones Flexbox */
+.flex-section {
+    padding: 80px 50px;
+    text-align: center;
+    background-color: #F8F8F8; /* Un gris claro para el fondo */
+    border-bottom: 1px solid #eee;
+}
+
+.flex-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 50px;
+    color: #4A2C2A;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos salten de línea */
+    justify-content: center;
+    gap: 30px; /* Espacio entre los elementos flex */
+}
+
+.flex-item {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 30px;
+    flex: 1; /* Permite que los elementos crezcan y se encojan */
+    min-width: 280px; /* Ancho mínimo para cada elemento */
+    max-width: 350px;
+    text-align: left;
+}
+
+.flex-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.flex-item h3 {
+    color: #6F4E37; /* Marrón café */
+    margin-bottom: 15px;
+    font-size: 1.6em;
+}
+
+.flex-item p {
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Ajustes específicos para la sección de ambiente */
+.flex-section.reverse-flex .flex-container {
+    flex-direction: row-reverse; /* Invierte el orden de los elementos */
+    align-items: center; /* Alinea los elementos verticalmente */
+}
+
+.flex-section.reverse-flex .flex-item.large-item {
+    flex: 2; /* Este elemento ocupará más espacio */
+    max-width: 600px;
+}
+
+.flex-section.reverse-flex .flex-item.small-item {
+    flex: 1; /* Este elemento ocupará menos espacio */
+    max-width: 400px;
+}
+
+/* Galería */
+.gallery-section {
+    padding: 80px 50px;
+    text-align: center;
+    background-color: #FFF;
+}
+
+.gallery-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #4A2C2A;
+}
+
+.filters {
+    margin-bottom: 30px;
+}
+
+.filter-btn {
+    background-color: #EFEFEF;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.filter-btn:hover, .filter-btn.active {
+    background-color: #A0522D;
+    color: white;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Columnas responsivas */
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 250px; /* Altura fija para las imágenes */
+    object-fit: cover; /* Recorta la imagen para que cubra el área */
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0,0,0,0.6);
+    color: white;
+    padding: 10px;
+    font-size: 0.9em;
+    opacity: 0; /* Oculto por defecto */
+    transition: opacity 0.3s ease;
+}
+
+.gallery-item .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05); /* Efecto de zoom en la imagen */
+}
+
+.gallery-item:hover figcaption,
+.gallery-item:hover .overlay {
+    opacity: 1; /* Muestra el texto o overlay al hacer hover */
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+}
+
+/* Media Queries para Responsividad (ejemplo básico) */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 15px 20px;
+    }
+    .navbar .nav-links {
+        margin-top: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .navbar .nav-links li a {
+        padding: 8px 12px;
+    }
+    .navbar .nav-icons {
+        margin-top: 15px;
+    }
+    .hero {
+        padding: 100px 15px;
+    }
+    .hero-content h1 {
+        font-size: 2.5em;
+    }
+    .flex-section {
+        padding: 50px 20px;
+    }
+    .flex-container {
+        flex-direction: column; /* Apila los elementos en pantallas pequeñas */
+    }
+    .flex-item {
+        max-width: 100%;
+    }
+    .flex-section.reverse-flex .flex-container {
+        flex-direction: column; /* También apilar para mantener la consistencia */
+    }
+}
